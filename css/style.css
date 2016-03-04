@@ -1,0 +1,482 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    background-color: coral;
+}
+
+
+#h1 {
+
+    text-align: center;
+    color: #00843b;
+    text-shadow: 1px 1px 3px #000000;
+    font-size: 6em;
+    padding-top: 0;
+}
+
+
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 120px;
+}
+
+#register {
+    display: block;
+    float: right;
+    margin-right: 75px;
+    background-color: #7b513f;
+    height: 25px;
+    margin-top: 5px;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #ffffff;
+
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+#register:hover {
+    background-color: #a06a55;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation ul {
+    background-color: #c38d79;
+    height: 35px;
+    padding-left: 15px;
+
+}
+
+.navigation ul li {
+    float: left;
+    height: 100%;
+    position: relative;
+
+}
+
+
+
+.navigation ul li a {
+    display: block;
+    height: calc(100% - 7.8px);
+    color: #ffba69;
+    padding-top: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-right: 1px solid #ffffff;
+
+    transition: color 0.4s;
+
+
+}
+
+
+
+
+.navigation ul li a:hover {
+    color: #ffe0bc;
+}
+
+
+.borderClear:last-child {
+    border: none;
+}
+
+.navigation ul li a {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+#aside, #article{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.40);
+    position: relative;
+    left: 50px;
+    float: left;
+
+}
+
+#aside {
+    width: 25%;
+    height: 450px;
+
+
+}
+/* Auth */
+#aside #auth {
+    background-color: #db8560;
+    height: 280px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+
+
+
+
+#aside #auth h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 2.3em;
+    color: #ffba69;
+}
+
+form[name="auth"] {
+
+}
+
+form[name="auth"] input[name="login"], form[name="auth"] input[name="password"]  {
+
+    margin: 4%;
+    width: 90%;
+    height: 35px;
+    background-color: #a85f41;
+    text-align: center;
+    font-size: 1.4em;
+    color: #ffba69;
+
+
+
+}
+
+form[name="auth"] input[name="password"] {
+
+    position: relative;
+    bottom:15px;
+
+}
+
+#Forgot_your_password {
+    color: #ffba69;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+
+    font-size: 1em;
+    font-family: Arial, Tahoma, sans-serif;
+
+    transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+#Forgot_your_password:hover {
+
+    color: #edae62;
+}
+
+form[name="auth"] input[name="auth_done"] {
+
+    float: right;
+    margin-right:7%;
+    margin-top: 15%;
+
+    background-color: #e1ae72;
+
+    height: 35px;
+    width: 130px;
+
+    font-size: 1.5em;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+}
+
+form[name="auth"] input[name="auth_done"]:hover {
+    cursor: pointer;
+
+    background-color: #c6964f;
+}
+
+form[name="auth"] input[name="login"]::-webkit-input-placeholder, form[name="auth"] input[name="password"]::-webkit-input-placeholder {
+    color: #c47e4e;
+}
+form[name="auth"] input[name="login"]:-moz-input-placeholder, form[name="auth"] input[name="password"]:-moz-input-placeholder {
+    color: #c47e4e;
+}
+
+form[name="auth"] input[name="login"]::-moz-input-placeholder, form[name="auth"] input[name="password"]::-moz-input-placeholder {
+    color: #c47e4e;
+}
+
+form[name="auth"] input[name="login"]:-ms-input-placeholder, form[name="auth"] input[name="password"]:-ms-input-placeholder {
+    color: #c47e4e;
+}
+
+form[name="auth"] input[name="login"]:-o-input-placeholder, form[name="auth"] input[name="password"]:-o-input-placeholder {
+    color: #c47e4e;
+}
+
+#InSession {
+    background-color: #db8560;
+    width: 90%;
+    height: 420px;
+    margin-left: 5%;
+    border-radius: 15px;
+
+}
+
+#InSession img {
+    margin-top: 20px;
+}
+#InSession .linksUser {
+    display: block;
+    background-color: #b3816e;
+    width: 94%;
+    height: 32px;
+    margin-top: 5px;
+    margin-left: 3%;
+    border-radius: 20px;
+    padding-top: 8px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 1.2em;
+
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+#InSession .linksUser:hover {
+    background-color: #836052;
+}
+
+#InSession #logout {
+    display: block;
+    width: 50%;
+    height: 32px;
+    text-align: center;
+    margin: 7% auto;
+    padding-top: 8px;
+    background-color: #7b513f;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 1.3em;
+
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+
+}
+
+
+#InSession #your_login {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 1.3em;
+}
+
+#InSession #logout:hover {
+    background-color: #a36b53;
+}
+
+#errors {
+    text-align: center;
+    color: #ba0d00;
+    font-weight: 500;
+    font-family: Arial, Tahoma, sans-serif;
+    position: relative;
+    top: 5px;
+
+
+}
+
+#article {
+    width: 60%;
+    height: 530px;
+    margin-right: 8.3%;
+}
+
+#footer {
+    background-color: white;
+    border: 1px solid silver;
+    font-size: 1.1em;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    height: 100px;
+    width: 97%;
+    font-family: sans-serif;
+    float: left;
+    position: relative;
+}
+
+#footer img[src="img/vk%20logo.png"] {
+    position: absolute;
+    width: 35px;
+    height: auto;
+
+    right: 0;
+    top: 60%;
+}
+
+#footer p {
+    position: absolute;
+    left: 45%;
+    top: 75%;
+}
+
+/* Особистий кабінет */
+
+
+#ContentMenu {
+    margin-top: 4%;
+    margin-left: 1%;
+    background-color: #cc6633;
+    width: 25%;
+    height: 350px;
+    float: left;
+}
+
+#ContentMenu ul {
+    position: relative;
+    top: 20px;
+}
+
+#ContentMenu ul li {
+    margin: 10px auto;
+    padding-top: 10px;
+    background-color: #cc9966;
+    height: 30px;
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 1.1em;
+
+
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+#ContentMenu ul li a {
+	display: block;
+	color: #fff;
+}
+
+#ContentMenu ul li:hover {
+    cursor: pointer;
+
+    background-color: #906e48;
+}
+
+
+#Content {
+    background-color: #d45135;
+    width: 50%;
+    height: 380px;
+    margin: 4% 3%;
+    float: left;
+    overflow: auto;
+}
+
+
+#Content #private input[type="text"] {
+    background-color: rgba(255, 157, 77, 1);
+    border: 2px solid rgba(199, 99, 79, 0.87);
+    border-radius: 3px;
+    height: 30px;
+    width: 60%;
+
+    margin-top: 5px;
+}
+
+#Content #private #mood {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+#Content #private input[type="text"]::-webkit-input-placeholder {
+    color: #fff;
+}
+form[name="auth"] input[name="login"]:-moz-input-placeholder {
+    color: #fff;
+}
+
+#Content #private input[type="text"]::-moz-input-placeholder {
+    color: #fff;
+}
+
+#Content #private input[type="text"]:-ms-input-placeholder {
+    color: #fff;
+}
+
+#Content #private input[type="text"]:-o-input-placeholder {
+    color: #fff;
+}
+
+#you {
+    resize: none;
+}
+
+#errAuth {
+    background-color: rgba(255, 255, 255, 0.42);
+    width: 60%;
+    height: 320px;
+    margin-top: 20px;
+}
+
+#errAuth p {
+    font-family: Arial, Tahoma, sans-serif ;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+
+
+}
+
+#errAuth #bigText {
+    font-size: 2.3em;
+    color: #b40004;
+    font-weight: 600;
+}
+
+#errAuth p a {
+     font-size: 0.8em;
+     color: #fff;
+
+    transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+#errAuth p a:hover {
+    color: #7d7d7d;
+}

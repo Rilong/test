@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.header h1 {
+    text-align: center;
+    color: #00843b;
+    text-shadow: 1px 1px 3px #000000;
+    font-size: 6em;
+    padding-top: 0;
+}
+
+.upload {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.uploadBlock {
+    background-color: white;
+    border-radius: 5px;
+    width: 450px; height: 250px;
+    margin: 20px auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+form {
+
+}
+input {
+
+}
+
+[type="submit"] {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
+    background-color: #d1a16b;
+    width: 38%;
+    height: 35px;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: Arial, Tahoma, sans-serif;
+    border-radius: 10px;
+
+    transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -webkit-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+}
+
+[type="submit"]:hover {
+
+
+    background-color: #aa8556;
+}
+
+img {
+
+}
+
+
+#DelAvatar {
+    position: absolute;
+    bottom: 4%;
+    right: 4.96%;
+
+
+}
+
+#avatar {
+
+    position: absolute;
+    right: 4.96%;
+    bottom: 20%;
+    height: 130px;
+    width: 150px;
+
+    overflow: hidden;
+}
+#DelAvatar a {
+    display: block;
+    background-color: #bd691d;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #ffffff;
+
+
+    transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -webkit-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+}
+
+#DelAvatar a:hover {
+    background-color: #7d4713;
+}
