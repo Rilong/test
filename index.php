@@ -2,7 +2,7 @@
 
     session_start();
     require_once "core/class_users.php";
-
+	echo "Hello, World!!!"
 
     $login = $_POST["login"];
     $password = $_POST["password"];
